@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.google.firebase.codelab.friendlychat;
+package kotlin.firebase_repository;
 
 public class FriendlyMessage {
 
@@ -41,10 +41,6 @@ public class FriendlyMessage {
         this.id = id;
     }
 
-    public void setText(String text) {
-        this.text = text;
-    }
-
     public String getName() {
         return name;
     }
@@ -57,12 +53,16 @@ public class FriendlyMessage {
         return photoUrl;
     }
 
+    public void setPhotoUrl(String photoUrl) {
+        this.photoUrl = photoUrl;
+    }
+
     public String getText() {
         return text;
     }
 
-    public void setPhotoUrl(String photoUrl) {
-        this.photoUrl = photoUrl;
+    public void setText(String text) {
+        this.text = text;
     }
 
     public String getImageUrl() {
